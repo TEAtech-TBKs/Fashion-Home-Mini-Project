@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+  --text-color: #111111;
+  --background-color: #F5F1E8;
+  --primary-color: #f0b464;
+  --secondary-color: #555555;
+  --accent-color: #C9A96E;
+  --font-size-lg: 64px;
+  --font-size-bg: 32px;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+}
+
+/* To use the root colors all you need to do is write var(put root name inside) as written below, this is to foster consitent styling*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+}
+main{
+  text-align: center;
+}
+
+/* The headings style */
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+p{
+  color: var(--text-color);
+  font-size: var(--font-size-md);
+
+}
+
+/* The navigation styling */
+nav {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 15px;
+}
+
+
+button {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
