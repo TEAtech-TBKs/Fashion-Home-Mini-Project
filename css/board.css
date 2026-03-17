@@ -1,0 +1,32 @@
+/* Board Section */
+.board{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.member img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.member h3{
+  margin-top: 10px;
+}
+
+.member p{
+  color: var(--secondary-color);
+}
+
+/* Hover effect (luxury feel) */
+.member{
+  transition: 0.3s ease;
+}
+
+.member:hover{
+  transform: translateY(-5px);
+}

@@ -6,53 +6,217 @@
   --primary-color: #f0b464;
   --secondary-color: #555555;
   --accent-color: #C9A96E;
+
+  --font-size-xlg: 76px;
   --font-size-lg: 64px;
   --font-size-bg: 32px;
   --font-size-md: 16px;
   --font-size-sm: 14px;
 }
 
-/* To use the root colors all you need to do is write var(put root name inside) as written below, this is to foster consitent styling*/
-
-body {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+/* Body */
+body {
   background: var(--background-color);
   color: var(--text-color);
-  margin: 0;
-}
-main{
-  text-align: center;
+  min-height: 100vh;
 }
 
-/* The headings style */
+/* Headings */
 h1, h2, h3 {
   color: var(--text-color);
 }
 
+/* Paragraphs */
 p{
   color: var(--text-color);
   font-size: var(--font-size-md);
-
+  line-height: 1.6;
 }
 
-/* The navigation styling */
-nav {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 15px;
-}
-
-
+/* Buttons */
 button {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
 }
-
 
 button:hover {
   background: var(--accent-color);
+}
+
+/* Marquee */
+marquee{
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 0.25rem 0;
+  font-size: var(--font-size-sm);
+  position: absolute;
+}
+
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 5rem 0.5rem 5rem;
+  background: var(--text-color);
+}
+
+header img{
+  height: 60px;
+}
+
+/* Navigation */
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--background-color);
+  font-weight: 500;
+}
+
+nav a:hover{
   color: var(--primary-color);
+}
+
+/* Hero Section */
+.Hero{
+  height: 90vh;
+  background: linear-gradient(transparent, black), url("../images/SalesCardImages/f850297ebca636d0d837e245f6a0cebd.jpg");
+  background-size: 1080px;
+  background-position: center;
+  /* text-align: center; */
+  justify-content: center;
+  padding: 10rem 5rem 0 5rem;
+}
+
+.Hero *{
+  position: relative;
+}
+
+.Hero h2{
+  font-size: var(--font-size-xlg);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.Hero p{
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  max-width: 600px; 
+}
+.Hero h2,
+.Hero p{
+  color: var(--background-color);
+  text-shadow: #111111 10px 3px 5px;
+}
+
+.Hero button{
+  border: 2px solid var(--background-color);
+  background:#8e64f02c;
+  background-blend-mode:luminosity;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-shadow: #111111 3px 2px 3px;
+  margin: 1rem 0;
+}
+
+/* Featured Products */
+.featureProduct{
+  padding: 4rem 5rem;
+}
+
+.featureProduct h2{
+  margin-bottom: 2rem;
+  font-weight: 100;
+  font-size: var(--font-size-bg);
+}
+
+.product{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featureProduct article{
+  width: 300px;
+}
+
+.featureProduct img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* About Section */
+.About {
+  padding: 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ @media (max-width: 768px) {
+  .About {
+    grid-template-columns: 1fr;
+  }
+} 
+
+.About h2{
+  margin-bottom: 1rem;
+  font-weight: 100;
+  font-size: var(--font-size-bg);
+}
+
+.about-img{
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem ;
+  background: url("../images/SalesCardImages/4.png");
+}
+/* Call To Action */
+.CTA{
+  padding: 4rem 5rem;
+  background: url("../images/SalesCardImages/cta-bg.png");
+  background-size: cover;
+}
+.CTA h2,
+.CTA p{
+  color: var(--background-color);
+  text-shadow: #111111 3px 2px 3px;
+}
+.CTA h2{
+  font-size: var(--font-size-bg);
+  margin-bottom: 1rem;
+  color: var(--background-color);
+}
+
+.CTA button{
+  background: var(--background-color);
+  color: var(--text-color);
+  &:hover{
+    background: var(--text-color);
+    color: var(--background-color);
+  }
+}
+
+/* Footer */
+footer p{
+  text-align: center;
+  padding: 2rem;
+  background: var(--text-color);
+  color: var(--background-color);
 }

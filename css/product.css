@@ -1,0 +1,37 @@
+/* Page Header */
+.page-header{
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Products Grid */
+.products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 5rem;
+}
+
+/* Product Card */
+.card{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+.member img{
+  filter: grayscale(100%);
+}
+
+.member:hover img{
+  filter: grayscale(0%);
+}

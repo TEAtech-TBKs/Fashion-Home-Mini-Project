@@ -1,0 +1,35 @@
+/* Contact Section */
+.contact-section{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 5rem;
+}
+
+form{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: var(--font-size-md);
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+}
