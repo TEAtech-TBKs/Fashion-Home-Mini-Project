@@ -162,7 +162,6 @@ nav a:hover{
   border-radius: 6px;
 }
 
-/* About Section */
 .About {
   padding: 4rem 5rem;
   display: grid;
@@ -187,7 +186,7 @@ nav a:hover{
   padding: 1rem ;
   background: url("../images/SalesCardImages/4.png");
 }
-/* Call To Action */
+
 .CTA{
   padding: 4rem 5rem;
   background: url("../images/SalesCardImages/cta-bg.png");
@@ -213,7 +212,6 @@ nav a:hover{
   }
 }
 
-/* Footer */
 footer p{
   text-align: center;
   padding: 2rem;

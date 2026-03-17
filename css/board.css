@@ -1,4 +1,3 @@
-/* Board Section */
 .board{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -22,7 +21,6 @@
   color: var(--secondary-color);
 }
 
-/* Hover effect (luxury feel) */
 .member{
   transition: 0.3s ease;
 }
