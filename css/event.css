@@ -1,3 +1,22 @@
+.page-header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.774)), 
+                url('../images/SalesCardImages/eventPG.png');
+    background-size:cover;
+    height: 300px;
+    align-items: center;
+    padding: 5rem 0 0;
+  }
+  
+  .page-header p{
+    color: var(--background-color);
+  }
+  .page-header h1 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+}
+
 .events{
   display: flex;
   flex-direction: column;
@@ -6,12 +25,13 @@
 }
 
 .event-card{
-  display: flex;
+  display: inline-flex;
   gap: 2rem;
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   transition: 0.3s ease;
+  border: 1px solid #f0f0f0;  
 }
 
 .event-card:hover{
@@ -20,6 +40,7 @@
 
 .event-card img{
   width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 

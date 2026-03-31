@@ -1,3 +1,20 @@
+.page-header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/SalesCardImages/boardPG.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    align-items: center;
+    padding: 5rem 0 0;
+}
+.page-header p{
+    color: var(--background-color);
+}
+.page-header h1 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
 .board{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
