@@ -63,3 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+function redirect() {
+    window.location.href = "product.html";
+    
+}
