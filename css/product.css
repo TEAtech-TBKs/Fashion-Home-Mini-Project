@@ -25,6 +25,18 @@
   gap: 2rem;
   padding: 2rem 5rem;
 }
+@media (max-width: 768px){
+  .products{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 2rem;
+  }
+    
+}
+@media (max-width: 425px){
+  .products{
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   background: #fff;

@@ -3,6 +3,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.774)), 
                 url('../images/SalesCardImages/eventPG.png');
     background-size:cover;
+    background-position: center;
     height: 300px;
     align-items: center;
     padding: 5rem 0 0;
@@ -23,6 +24,7 @@
   gap: 2rem;
   padding: 3rem 5rem;
 }
+
 
 .event-card{
   display: inline-flex;
@@ -54,4 +56,44 @@
 
 .event-info p{
   margin-bottom: 5px;
+}
+/* Tablet and Mobile Responsiveness */
+@media (max-width: 992px) {
+    .events {
+        padding: 2rem 5%; /* Reduces large side padding */
+    }
+
+    .event-card {
+        display: flex; /* Switch from inline-flex to standard flex */
+        flex-direction: column; /* Stacks image on top of text */
+        max-width: 500px; /* Keeps cards from getting too wide on tablets */
+        margin: 0 auto; /* Centers the cards */
+    }
+
+    .event-card img {
+        width: 100%; /* Image takes full card width */
+        height: 250px; /* Adjusted height for better aspect ratio */
+    }
+
+    .event-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+    .page-header {
+        height: 250px;
+        padding: 4rem 1rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .events {
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
 }
