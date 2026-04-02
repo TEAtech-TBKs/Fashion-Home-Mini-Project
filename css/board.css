@@ -22,6 +22,16 @@
   padding: 3rem 5rem;
   text-align: center;
 }
+@media (max-width: 768px){
+  .board{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px){
+  .board{
+    grid-template-columns: 1fr;
+  }
+}
 
 .member img{
   width: 100%;
