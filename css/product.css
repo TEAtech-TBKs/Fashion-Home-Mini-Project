@@ -81,11 +81,14 @@
   display: flex;
   gap: 8px;
 }
+.fa-solid{
+  color: var(--secondary-color)
+}
 
 .icon-btn {
   width: 35px;
   height: 35px;
-  border-radius: 50%;
+  border-radius: 5px;
   border: 1px solid #ddd;
   background: white;
   cursor: pointer;
