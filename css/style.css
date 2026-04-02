@@ -334,6 +334,16 @@ h1 {
     padding: 2rem 1.5rem;
   }
 }
+@media (max-width: 425px) {
+  .featureProduct {
+    padding: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .featureProduct {
+    padding: 0.5rem;
+  }
+}
 
 .featureProduct h2{
   margin-bottom: 2rem;
