@@ -329,6 +329,11 @@ h1 {
 .featureProduct{
   padding: 4rem 5rem;
 }
+@media (max-width: 768px) {
+  .featureProduct {
+    padding: 2rem 1.5rem;
+  }
+}
 
 .featureProduct h2{
   margin-bottom: 2rem;
